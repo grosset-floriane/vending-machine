@@ -21,11 +21,9 @@ import { BUYER, SELLER } from "../../utils/constants"
 const RegistrationForm: React.FC = () => {
   const dispatch = useAppDispatch()
   const { control, errors, clearErrors, handleSubmit } = useForm()
-  console.log(errors)
 
   const submit = (formValues: UserRegistrationPayload) => {
     const { username, password, role } = formValues
-    console.log(formValues)
     dispatch(registerUser({ username, password, role }))
       .unwrap()
       .then(() => {
