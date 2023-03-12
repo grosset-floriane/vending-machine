@@ -10,7 +10,7 @@ import { BUYER, SELLER } from "../../utils/constants"
 
 const useStyles = makeStyles(() => ({
   main: {
-    margin: "80px 0 40px",
+    margin: "80px auto 40px",
   },
 }))
 
